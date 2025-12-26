@@ -1,0 +1,78 @@
+:root{
+  --brand:#0b3b78;
+  --brand2:#0a2b55;
+  --light:#f6f8fb;
+  --text:#1f2937;
+}
+
+body{
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: var(--text);
+}
+
+.navbar{
+  background: linear-gradient(90deg, var(--brand), var(--brand2));
+}
+
+.hero{
+  min-height: 72vh;
+  background: url("assets/img/hero.jpg") center/cover no-repeat;
+  position: relative;
+  display:flex;
+  align-items:center;
+}
+
+.hero::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background: rgba(0,0,0,.45);
+}
+
+.hero .hero-content{
+  position: relative;
+  z-index: 2;
+  color: #fff;
+}
+
+.section-title{
+  font-weight: 700;
+  letter-spacing: .3px;
+}
+
+.card{
+  border: 0;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,.06);
+}
+
+.footer{
+  background: #0b1b33;
+  color: #cfe2ff;
+}
+
+.footer a{ color:#cfe2ff; text-decoration:none; }
+.footer a:hover{ text-decoration:underline; }
+
+.badge-soft{
+  background: rgba(11,59,120,.10);
+  color: var(--brand);
+  font-weight: 600;
+}
+
+.img-rounded{
+  border-radius: 16px;
+}
+
+.small-muted{
+  color:#6b7280;
+  font-size:.95rem;
+}
+
+kbd{
+  padding:.15rem .35rem;
+  border-radius:.35rem;
+  background:#111827;
+  color:#fff;
+  font-size:.85rem;
+}
